@@ -1,0 +1,61 @@
+#contact {
+  min-height: 100vh;
+  @include flex(center, center, row);
+  width: 80%;
+  margin: auto;
+  .text {
+    flex: 1 1 40rem;
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+  form {
+    flex: 1 1 40rem;
+    @include flex(center, space-around, column);
+    #name {
+      color: white;
+      padding: 2rem;
+      border: none;
+      border-bottom: 1px solid white;
+      background-color: hsl(0, 2%, 19%);
+    }
+    #email {
+      color: white;
+      padding: 2rem;
+      border: none;
+      border-bottom: 1px solid white;
+      background-color: hsl(0, 2%, 19%);
+    }
+    #message {
+      color: white;
+      padding: 2rem;
+      border: none;
+      border-bottom: 1px solid white;
+      background-color: hsl(0, 2%, 19%);
+    }
+    #submit {
+      width: 20rem;
+      color: white;
+      padding: 1rem;
+      border: none;
+      margin-top: 2rem;
+      border-bottom: 5px solid $green;
+      background-color: hsl(0, 2%, 19%);
+      align-self: flex-end;
+
+      &:hover {
+        background-color: rgb(73, 72, 72);
+      }
+    }
+  }
+}
+
+@media screen and(max-width:900px) {
+  #contact {
+    @include flex(center, center, column);
+  }
+  form {
+    width: 35rem;
+    border-top: 1px solid white;
+  }
+}

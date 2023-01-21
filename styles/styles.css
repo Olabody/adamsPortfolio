@@ -1,0 +1,508 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: hsl(0deg, 2%, 19%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3.8rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+p,
+li,
+button,
+input,
+textarea {
+  font-size: 2rem;
+}
+
+.nav-cont {
+  width: 100%;
+  background-color: rgb(73, 72, 72);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  opacity: 0.7;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(73, 72, 72);
+}
+nav h1 {
+  flex: 1 1 40rem;
+}
+nav ul {
+  flex: 2 2 40rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+}
+
+#about {
+  margin-top: 2rem;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#about .text-wrapper {
+  margin-bottom: 20rem;
+}
+#about h2 {
+  margin-bottom: 2rem;
+}
+#about svg {
+  position: absolute;
+  height: 60%;
+  width: 70%;
+  right: 0%;
+  top: 10%;
+  z-index: -1;
+}
+#about p {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+#about .languages {
+  width: 90%;
+  margin: auto;
+  border-top: 2px solid white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#about .languages .html {
+  padding: 2rem;
+}
+#about .languages .css {
+  padding: 2rem;
+}
+#about .languages .javascript {
+  padding: 2rem;
+}
+#about .languages .sass {
+  padding: 2rem;
+}
+
+footer {
+  width: 80%;
+  margin: auto;
+  min-height: 10rem;
+  margin-top: 3rem;
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+footer h4 {
+  flex: 3 1 40rem;
+}
+footer .icons {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+footer .icons img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.active {
+  background: rgb(36, 36, 36);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+#plant-left {
+  -webkit-animation: plant 1.5s ease infinite alternate;
+          animation: plant 1.5s ease infinite alternate;
+}
+
+#plant-right {
+  -webkit-animation: plant 1.5s ease 0.5s infinite alternate;
+          animation: plant 1.5s ease 0.5s infinite alternate;
+}
+
+#me {
+  -webkit-animation: me 1s ease infinite alternate;
+          animation: me 1s ease infinite alternate;
+  transform-origin: bottom;
+}
+
+#clock-arrow {
+  -webkit-animation: clock 1.5s infinite linear;
+          animation: clock 1.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+@-webkit-keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+@-webkit-keyframes me {
+  from {
+    transform: rotateY(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+@keyframes me {
+  from {
+    transform: rotateY(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+@-webkit-keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  svg {
+    position: static;
+    z-index: 2;
+  }
+  .text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  .languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+}
+#contact {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+#contact .text {
+  flex: 1 1 40rem;
+}
+#contact .text h2 {
+  margin-bottom: 2rem;
+}
+#contact form {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  flex-direction: column;
+}
+#contact form #name {
+  color: white;
+  padding: 2rem;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: hsl(0deg, 2%, 19%);
+}
+#contact form #email {
+  color: white;
+  padding: 2rem;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: hsl(0deg, 2%, 19%);
+}
+#contact form #message {
+  color: white;
+  padding: 2rem;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: hsl(0deg, 2%, 19%);
+}
+#contact form #submit {
+  width: 20rem;
+  color: white;
+  padding: 1rem;
+  border: none;
+  margin-top: 2rem;
+  border-bottom: 5px solid rgb(57, 99, 17);
+  background-color: hsl(0deg, 2%, 19%);
+  align-self: flex-end;
+}
+#contact form #submit:hover {
+  background-color: rgb(73, 72, 72);
+}
+
+@media screen and (max-width: 900px) {
+  #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  form {
+    width: 35rem;
+    border-top: 1px solid white;
+  }
+}
+main {
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+}
+main h2 {
+  margin: 2rem;
+}
+main .images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+main .images .elena-joy h4 {
+  margin: 1rem;
+}
+main .images .elena-joy p {
+  margin: 1rem;
+}
+main .images .elena-joy .view-elena-joy {
+  width: 20rem;
+  color: white;
+  padding: 1rem;
+  border: none;
+  margin: 2rem;
+  margin-top: 0rem;
+  border-bottom: 5px solid rgb(57, 99, 17);
+  background-color: hsl(0deg, 2%, 19%);
+}
+main .images .elena-joy .view-elena-joy:hover {
+  background-color: rgb(73, 72, 72);
+}
+main .images .elena-joy .view-elena-joy-code {
+  width: 20rem;
+  color: white;
+  padding: 1rem;
+  border: none;
+  margin: 2rem;
+  margin-top: 0rem;
+  border-bottom: 5px solid rgb(57, 99, 17);
+  background-color: hsl(0deg, 2%, 19%);
+}
+main .images .elena-joy .view-elena-joy-code:hover {
+  background-color: rgb(73, 72, 72);
+}
+main .images .travelly {
+  margin-top: 5rem;
+}
+main .images .travelly h4 {
+  margin: 1rem;
+}
+main .images .travelly p {
+  margin: 1rem;
+}
+main .images .travelly .view-travelly {
+  width: 20rem;
+  color: white;
+  padding: 1rem;
+  border: none;
+  margin: 2rem;
+  margin-top: 0rem;
+  border-bottom: 5px solid rgb(57, 99, 17);
+  background-color: hsl(0deg, 2%, 19%);
+}
+main .images .travelly .view-travelly:hover {
+  background-color: rgb(73, 72, 72);
+}
+main .images .travelly .view-travelly-code {
+  width: 20rem;
+  color: white;
+  padding: 1rem;
+  border: none;
+  margin: 2rem;
+  margin-top: 0rem;
+  border-bottom: 5px solid rgb(57, 99, 17);
+  background-color: hsl(0deg, 2%, 19%);
+}
+main .images .travelly .view-travelly-code:hover {
+  background-color: rgb(73, 72, 72);
+}
+main .images .hexashop {
+  margin-top: 5rem;
+}
+main .images .hexashop h4 {
+  margin: 1rem;
+}
+main .images .hexashop p {
+  margin: 1rem;
+}
+main .images .hexashop img {
+  height: 48.6rem;
+  width: 62.2rem;
+}
+main .images .hexashop .view-hexashop {
+  width: 20rem;
+  color: white;
+  padding: 1rem;
+  border: none;
+  margin: 2rem;
+  margin-top: 0rem;
+  border-bottom: 5px solid rgb(57, 99, 17);
+  background-color: hsl(0deg, 2%, 19%);
+}
+main .images .hexashop .view-hexashop:hover {
+  background-color: rgb(73, 72, 72);
+}
+main .images .hexashop .view-hexashop-code {
+  width: 20rem;
+  color: white;
+  padding: 1rem;
+  border: none;
+  margin: 2rem;
+  margin-top: 0rem;
+  border-bottom: 5px solid rgb(57, 99, 17);
+  background-color: hsl(0deg, 2%, 19%);
+}
+main .images .hexashop .view-hexashop-code:hover {
+  background-color: rgb(73, 72, 72);
+}
+main .images .rating {
+  margin-top: 5rem;
+}
+main .images .rating h4 {
+  margin: 1rem;
+}
+main .images .rating p {
+  margin: 1rem;
+}
+main .images .rating img {
+  height: 48.6rem;
+  width: 62.2rem;
+}
+main .images .rating .view-rating {
+  width: 20rem;
+  color: white;
+  padding: 1rem;
+  border: none;
+  margin: 2rem;
+  margin-top: 0rem;
+  border-bottom: 5px solid rgb(57, 99, 17);
+  background-color: hsl(0deg, 2%, 19%);
+}
+main .images .rating .view-rating:hover {
+  background-color: rgb(73, 72, 72);
+}
+main .images .rating .view-rating-code {
+  width: 20rem;
+  color: white;
+  padding: 1rem;
+  border: none;
+  margin: 2rem;
+  margin-top: 0rem;
+  border-bottom: 5px solid rgb(57, 99, 17);
+  background-color: hsl(0deg, 2%, 19%);
+}
+main .images .rating .view-rating-code:hover {
+  background-color: rgb(73, 72, 72);
+}
+
+@media screen and (max-width: 800px) {
+  .elena-joy img {
+    height: 249.59px;
+    width: 320px;
+  }
+  .travelly img {
+    height: 249.59px;
+    width: 320px;
+  }
+  .hexashop img {
+    max-height: 249.59px;
+    max-width: 320px;
+  }
+  .rating img {
+    max-height: 249.59px;
+    max-width: 320px;
+  }
+}/*# sourceMappingURL=styles.css.map */

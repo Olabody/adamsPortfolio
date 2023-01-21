@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+$header1: 2.5rem;
+$header2: 5rem;
+$header3: 3.8rem;
+$header4: 3rem;
+$par: 2rem;
+$green: rgb(57, 99, 17);
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+$Orange: hsl(25, 97%, 53%);
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: hsl(0, 2%, 19%);
+  color: $White;
+}
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+h1 {
+  font-size: $header1;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4 {
+  font-size: $header4;
+}
+p,
+li,
+button,
+input,
+textarea {
+  font-size: $par;
+}

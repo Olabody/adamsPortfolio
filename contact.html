@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Olabody || Portfolio</title>
+  </head>
+  <body>
+    <section class="nav-cont">
+      <nav>
+        <h1>Olabody</h1>
+        <ul>
+          <li><a class="nav-li" href="/index.html">About</a></li>
+          <li><a class="nav-li" href="/projects.html">Projects</a></li>
+          <li><a class="nav-li" href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+    <main>
+      <section id="contact">
+        <div class="text">
+          <h2>Contact</h2>
+          <p>
+            I would love to hear about your project and how <br />
+            I could help.Please fill in the form, and I'll get back <br />
+            to you as soon as possible.
+          </p>
+        </div>
+        <form name="contact" netlify>
+          <input
+            required
+            type="text"
+            name="name"
+            id="name"
+            placeholder="NAME"
+          />
+          <input
+            required
+            type="email"
+            name="email"
+            id="email"
+            placeholder="EMAIL"
+          />
+          <textarea
+            required
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="MESSAGE"
+          ></textarea>
+          <input id="submit" type="submit" value="SEND MESSAGE" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h4>Olabody &copy; 2022</h4>
+      <div class="icons">
+        <a href="https://github.com/Olabody">
+          <img src="/imgs/github.svg" alt="Github link"
+        /></a>
+        <a href="https://www.linkedin.com/in/olabode-adams-233b7325a/"
+          ><img src="/imgs/linked-in.svg" alt="linked-in link"
+        /></a>
+        <a
+          href="https://api.whatsapp.com/send?phone=2347011338192&text=Thanks%20for%20contacting%20me,%20what%20can%20I%20help%20you%20with"
+          ><img src="/imgs/icon-removebg-preview.png" alt="Whatsapp link"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="/contact.js"></script>
+  </body>
+</html>

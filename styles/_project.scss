@@ -1,0 +1,183 @@
+main {
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  h2 {
+    margin: 2rem;
+  }
+  .images {
+    @include flex(center, flex-start, column);
+    .elena-joy {
+      h4 {
+        margin: 1rem;
+      }
+      p {
+        margin: 1rem;
+      }
+      .view-elena-joy {
+        width: 20rem;
+        color: white;
+        padding: 1rem;
+        border: none;
+        margin: 2rem;
+        margin-top: 0rem;
+        border-bottom: 5px solid $green;
+        background-color: hsl(0, 2%, 19%);
+
+        &:hover {
+          background-color: rgb(73, 72, 72);
+        }
+      }
+      .view-elena-joy-code {
+        width: 20rem;
+        color: white;
+        padding: 1rem;
+        border: none;
+        margin: 2rem;
+        margin-top: 0rem;
+        border-bottom: 5px solid $green;
+        background-color: hsl(0, 2%, 19%);
+
+        &:hover {
+          background-color: rgb(73, 72, 72);
+        }
+      }
+    }
+    .travelly {
+      margin-top: 5rem;
+      h4 {
+        margin: 1rem;
+      }
+      p {
+        margin: 1rem;
+      }
+      .view-travelly {
+        width: 20rem;
+        color: white;
+        padding: 1rem;
+        border: none;
+        margin: 2rem;
+        margin-top: 0rem;
+        border-bottom: 5px solid $green;
+        background-color: hsl(0, 2%, 19%);
+
+        &:hover {
+          background-color: rgb(73, 72, 72);
+        }
+      }
+      .view-travelly-code {
+        width: 20rem;
+        color: white;
+        padding: 1rem;
+        border: none;
+        margin: 2rem;
+        margin-top: 0rem;
+        border-bottom: 5px solid $green;
+        background-color: hsl(0, 2%, 19%);
+
+        &:hover {
+          background-color: rgb(73, 72, 72);
+        }
+      }
+    }
+    .hexashop {
+      margin-top: 5rem;
+      h4 {
+        margin: 1rem;
+      }
+      p {
+        margin: 1rem;
+      }
+      img {
+        height: 48.6rem;
+        width: 62.2rem;
+      }
+      .view-hexashop {
+        width: 20rem;
+        color: white;
+        padding: 1rem;
+        border: none;
+        margin: 2rem;
+        margin-top: 0rem;
+        border-bottom: 5px solid $green;
+        background-color: hsl(0, 2%, 19%);
+
+        &:hover {
+          background-color: rgb(73, 72, 72);
+        }
+      }
+      .view-hexashop-code {
+        width: 20rem;
+        color: white;
+        padding: 1rem;
+        border: none;
+        margin: 2rem;
+        margin-top: 0rem;
+        border-bottom: 5px solid $green;
+        background-color: hsl(0, 2%, 19%);
+
+        &:hover {
+          background-color: rgb(73, 72, 72);
+        }
+      }
+    }
+    .rating {
+      margin-top: 5rem;
+      h4 {
+        margin: 1rem;
+      }
+      p {
+        margin: 1rem;
+      }
+      img {
+        height: 48.6rem;
+        width: 62.2rem;
+      }
+      .view-rating {
+        width: 20rem;
+        color: white;
+        padding: 1rem;
+        border: none;
+        margin: 2rem;
+        margin-top: 0rem;
+        border-bottom: 5px solid $green;
+        background-color: hsl(0, 2%, 19%);
+        &:hover {
+          background-color: rgb(73, 72, 72);
+        }
+      }
+      .view-rating-code {
+        width: 20rem;
+        color: white;
+        padding: 1rem;
+        border: none;
+        margin: 2rem;
+        margin-top: 0rem;
+        border-bottom: 5px solid $green;
+        background-color: hsl(0, 2%, 19%);
+        &:hover {
+          background-color: rgb(73, 72, 72);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .elena-joy img {
+    height: 249.59px;
+    width: 320px;
+  }
+  .travelly img {
+    height: 249.59px;
+    width: 320px;
+  }
+  .hexashop img {
+    max-height: 249.59px;
+    max-width: 320px;
+  }
+  .rating img {
+    max-height: 249.59px;
+    max-width: 320px;
+  }
+}

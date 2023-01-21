@@ -1,0 +1,171 @@
+.nav-cont {
+  width: 100%;
+  background-color: rgb(73, 72, 72);
+  position: sticky;
+  top: 0%;
+  opacity: 0.7;
+}
+nav {
+  width: 90%;
+
+  margin: auto;
+  min-height: 10vh;
+  @include flex(center, center, row);
+  background-color: rgb(73, 72, 72);
+  h1 {
+    flex: 1 1 40rem;
+  }
+  ul {
+    flex: 2 2 40rem;
+    @include flex(space-around, center, row);
+
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: $White;
+      }
+    }
+  }
+}
+
+#about {
+  margin-top: 2rem;
+  min-height: 90vh;
+  @include flex(center, flex-start, column);
+  .text-wrapper {
+    margin-bottom: 20rem;
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
+  svg {
+    position: absolute;
+    height: 60%;
+    width: 70%;
+    right: 0%;
+    top: 10%;
+    z-index: -1;
+  }
+  p {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .languages {
+    width: 90%;
+    margin: auto;
+    border-top: 2px solid white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .html {
+      padding: 2rem;
+    }
+    .css {
+      padding: 2rem;
+    }
+    .javascript {
+      padding: 2rem;
+    }
+    .sass {
+      padding: 2rem;
+    }
+  }
+}
+
+footer {
+  width: 80%;
+  margin: auto;
+  min-height: 10rem;
+  margin-top: 3rem;
+  border-top: 2px solid white;
+  @include flex(space-around, center, row);
+  h4 {
+    flex: 3 1 40rem;
+  }
+  .icons {
+    flex: 1 1 40rem;
+    @include flex(space-around, center, row);
+    img {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+}
+
+// JS TOGGLE
+.active {
+  background: rgb(36, 36, 36);
+
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+//ANIMATION
+#plant-left {
+  animation: plant 1.5s ease infinite alternate;
+}
+#plant-right {
+  animation: plant 1.5s ease 0.5s infinite alternate;
+}
+#me {
+  animation: me 1s ease infinite alternate;
+  transform-origin: bottom;
+}
+#clock-arrow {
+  animation: clock 1.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+@keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+@keyframes me {
+  from {
+    transform: rotateY(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+  #about {
+    @include flex(center, center, column);
+  }
+  svg {
+    position: static;
+    z-index: 2;
+  }
+  .text-wrapper {
+    @include flex(center, center, column);
+    margin-bottom: 5rem;
+  }
+  .languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+}
