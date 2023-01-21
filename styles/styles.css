@@ -88,6 +88,7 @@ nav ul li a {
 }
 #about h2 {
   margin-bottom: 2rem;
+  color: rgb(57, 99, 17);
 }
 #about svg {
   position: absolute;
