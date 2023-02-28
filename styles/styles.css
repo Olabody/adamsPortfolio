@@ -10,8 +10,8 @@ html {
 
 body {
   font-family: "poppins", sans-serif;
-  background-color: hsl(0deg, 2%, 19%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 2%, 19%);
+  color: hsl(0, 0%, 100%);
 }
 
 h1 {
@@ -41,7 +41,6 @@ textarea {
 .nav-cont {
   width: 100%;
   background-color: rgb(73, 72, 72);
-  position: -webkit-sticky;
   position: sticky;
   top: 0%;
   opacity: 0.7;
@@ -72,7 +71,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 #about {
@@ -105,7 +104,7 @@ nav ul li a {
 #about .languages {
   width: 90%;
   margin: auto;
-  border-top: 2px solid white;
+  border-bottom: 2px solid white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -119,6 +118,41 @@ nav ul li a {
   padding: 2rem;
 }
 #about .languages .sass {
+  padding: 2rem;
+}
+#about .titles {
+  width: 90%;
+  margin: auto;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#about .titles .first {
+  padding: 2rem;
+}
+#about .titles .second {
+  padding: 2rem;
+}
+#about .titles .third {
+  padding: 2rem;
+}
+#about .strengths {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#about .strengths .first {
+  padding: 2rem;
+}
+#about .strengths .second {
+  padding: 2rem;
+}
+#about .strengths .third {
+  padding: 2rem;
+}
+#about .strengths .fourth {
   padding: 2rem;
 }
 
@@ -155,35 +189,22 @@ footer .icons img {
 }
 
 #plant-left {
-  -webkit-animation: plant 1.5s ease infinite alternate;
-          animation: plant 1.5s ease infinite alternate;
+  animation: plant 1.5s ease infinite alternate;
 }
 
 #plant-right {
-  -webkit-animation: plant 1.5s ease 0.5s infinite alternate;
-          animation: plant 1.5s ease 0.5s infinite alternate;
+  animation: plant 1.5s ease 0.5s infinite alternate;
 }
 
 #me {
-  -webkit-animation: me 1s ease infinite alternate;
-          animation: me 1s ease infinite alternate;
+  animation: me 1s ease infinite alternate;
   transform-origin: bottom;
 }
 
 #clock-arrow {
-  -webkit-animation: clock 1.5s infinite linear;
-          animation: clock 1.5s infinite linear;
+  animation: clock 1.5s infinite linear;
   transform-box: fill-box;
   transform-origin: bottom;
-}
-
-@-webkit-keyframes plant {
-  from {
-    transform: translateY(0%);
-  }
-  to {
-    transform: translateY(-30%);
-  }
 }
 
 @keyframes plant {
@@ -194,28 +215,12 @@ footer .icons img {
     transform: translateY(-30%);
   }
 }
-@-webkit-keyframes me {
-  from {
-    transform: rotateY(-5deg);
-  }
-  to {
-    transform: rotateZ(5deg);
-  }
-}
 @keyframes me {
   from {
     transform: rotateY(-5deg);
   }
   to {
     transform: rotateZ(5deg);
-  }
-}
-@-webkit-keyframes clock {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
   }
 }
 @keyframes clock {
@@ -256,6 +261,18 @@ footer .icons img {
     align-items: center;
     flex-wrap: wrap;
   }
+  .titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .strengths {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   footer {
     flex-wrap: wrap;
   }
@@ -287,21 +304,21 @@ footer .icons img {
   padding: 2rem;
   border: none;
   border-bottom: 1px solid white;
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
 }
 #contact form #email {
   color: white;
   padding: 2rem;
   border: none;
   border-bottom: 1px solid white;
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
 }
 #contact form #message {
   color: white;
   padding: 2rem;
   border: none;
   border-bottom: 1px solid white;
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
 }
 #contact form #submit {
   width: 20rem;
@@ -310,7 +327,7 @@ footer .icons img {
   border: none;
   margin-top: 2rem;
   border-bottom: 5px solid rgb(57, 99, 17);
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
   align-self: flex-end;
 }
 #contact form #submit:hover {
@@ -357,7 +374,7 @@ main .images .elena-joy .view-elena-joy {
   margin: 2rem;
   margin-top: 0rem;
   border-bottom: 5px solid rgb(57, 99, 17);
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
 }
 main .images .elena-joy .view-elena-joy:hover {
   background-color: rgb(73, 72, 72);
@@ -370,7 +387,7 @@ main .images .elena-joy .view-elena-joy-code {
   margin: 2rem;
   margin-top: 0rem;
   border-bottom: 5px solid rgb(57, 99, 17);
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
 }
 main .images .elena-joy .view-elena-joy-code:hover {
   background-color: rgb(73, 72, 72);
@@ -392,7 +409,7 @@ main .images .travelly .view-travelly {
   margin: 2rem;
   margin-top: 0rem;
   border-bottom: 5px solid rgb(57, 99, 17);
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
 }
 main .images .travelly .view-travelly:hover {
   background-color: rgb(73, 72, 72);
@@ -405,7 +422,7 @@ main .images .travelly .view-travelly-code {
   margin: 2rem;
   margin-top: 0rem;
   border-bottom: 5px solid rgb(57, 99, 17);
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
 }
 main .images .travelly .view-travelly-code:hover {
   background-color: rgb(73, 72, 72);
@@ -431,7 +448,7 @@ main .images .hexashop .view-hexashop {
   margin: 2rem;
   margin-top: 0rem;
   border-bottom: 5px solid rgb(57, 99, 17);
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
 }
 main .images .hexashop .view-hexashop:hover {
   background-color: rgb(73, 72, 72);
@@ -444,7 +461,7 @@ main .images .hexashop .view-hexashop-code {
   margin: 2rem;
   margin-top: 0rem;
   border-bottom: 5px solid rgb(57, 99, 17);
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
 }
 main .images .hexashop .view-hexashop-code:hover {
   background-color: rgb(73, 72, 72);
@@ -470,7 +487,7 @@ main .images .rating .view-rating {
   margin: 2rem;
   margin-top: 0rem;
   border-bottom: 5px solid rgb(57, 99, 17);
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
 }
 main .images .rating .view-rating:hover {
   background-color: rgb(73, 72, 72);
@@ -483,7 +500,7 @@ main .images .rating .view-rating-code {
   margin: 2rem;
   margin-top: 0rem;
   border-bottom: 5px solid rgb(57, 99, 17);
-  background-color: hsl(0deg, 2%, 19%);
+  background-color: hsl(0, 2%, 19%);
 }
 main .images .rating .view-rating-code:hover {
   background-color: rgb(73, 72, 72);

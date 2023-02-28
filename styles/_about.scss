@@ -55,7 +55,8 @@ nav {
   .languages {
     width: 90%;
     margin: auto;
-    border-top: 2px solid white;
+
+    border-bottom: 2px solid white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     .html {
@@ -68,6 +69,42 @@ nav {
       padding: 2rem;
     }
     .sass {
+      padding: 2rem;
+    }
+  }
+  .titles {
+    width: 90%;
+    margin: auto;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .first {
+      padding: 2rem;
+    }
+    .second {
+      padding: 2rem;
+    }
+    .third {
+      padding: 2rem;
+    }
+  }
+  .strengths {
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .first {
+      padding: 2rem;
+    }
+    .second {
+      padding: 2rem;
+    }
+    .third {
+      padding: 2rem;
+    }
+    .fourth {
       padding: 2rem;
     }
   }
@@ -161,6 +198,18 @@ footer {
     margin-bottom: 5rem;
   }
   .languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .strengths {
     display: flex;
     justify-content: center;
     align-items: center;
