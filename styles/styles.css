@@ -104,7 +104,7 @@ nav ul li a {
 #about .languages {
   width: 90%;
   margin: auto;
-  border-bottom: 2px solid white;
+  border-top: 2px solid white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -124,36 +124,33 @@ nav ul li a {
   width: 90%;
   margin: auto;
   border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2rem;
 }
-#about .titles .first {
-  padding: 2rem;
+#about .titles ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
-#about .titles .second {
-  padding: 2rem;
-}
-#about .titles .third {
-  padding: 2rem;
+#about .titles ul li {
+  list-style: none;
+  padding: 1rem;
 }
 #about .strengths {
   width: 90%;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  border-top: 2px solid white;
+  padding-top: 2rem;
 }
-#about .strengths .first {
-  padding: 2rem;
+#about .strengths ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
-#about .strengths .second {
-  padding: 2rem;
-}
-#about .strengths .third {
-  padding: 2rem;
-}
-#about .strengths .fourth {
-  padding: 2rem;
+#about .strengths ul li {
+  list-style: none;
+  padding: 1rem;
 }
 
 footer {
@@ -256,18 +253,6 @@ footer .icons img {
     margin-bottom: 5rem;
   }
   .languages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .titles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .strengths {
     display: flex;
     justify-content: center;
     align-items: center;

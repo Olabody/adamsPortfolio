@@ -55,8 +55,7 @@ nav {
   .languages {
     width: 90%;
     margin: auto;
-
-    border-bottom: 2px solid white;
+    border-top: 2px solid white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     .html {
@@ -76,36 +75,26 @@ nav {
     width: 90%;
     margin: auto;
     border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    .first {
-      padding: 2rem;
-    }
-    .second {
-      padding: 2rem;
-    }
-    .third {
-      padding: 2rem;
+    padding-top: 2rem;
+    ul {
+      @include flex(center, flex-start, column);
+      li {
+        list-style: none;
+        padding: 1rem;
+      }
     }
   }
   .strengths {
     width: 90%;
     margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    .first {
-      padding: 2rem;
-    }
-    .second {
-      padding: 2rem;
-    }
-    .third {
-      padding: 2rem;
-    }
-    .fourth {
-      padding: 2rem;
+    border-top: 2px solid white;
+    padding-top: 2rem;
+    ul {
+      @include flex(center, flex-start, column);
+      li {
+        list-style: none;
+        padding: 1rem;
+      }
     }
   }
 }
@@ -203,18 +192,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
   }
-  .titles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .strengths {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+
   footer {
     flex-wrap: wrap;
   }
